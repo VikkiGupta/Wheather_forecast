@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <button id="my">Mode</button>
+</body>
+</html>
+<script>
+    let a="light";
+    const btn1=document.getElementById("my");
+    btn1.addEventListener("click",()=>{
+    if(a=="light"){   
+        document.querySelector("body").style.backgroundColor="black";
+        a="dark";
+    }
+    else{
+        document.getElementsByTagName("body").style.backgroundColor="white";    
+        }
+    })
+</script>
